@@ -24,7 +24,7 @@ public class QuickSort {
   }
 
   static void quickSort(int[] arr, int low, int high) {
-    if (low > high) {
+    if (low < high) {
       int partitionIndex = partition(arr, low, high);
       quickSort(arr, low, partitionIndex - 1);
       quickSort(arr, partitionIndex + 1, high);
